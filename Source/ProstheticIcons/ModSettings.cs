@@ -14,14 +14,14 @@ namespace Syrchalis_ProstheticIcons
 {
     public class ProstheticIconsSettings : ModSettings
     {
-        public bool patchIcons = true;
-        public bool colorIcons = true;
+        //public bool patchIcons = true;
+        //public bool colorIcons = true;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref patchIcons, "patchIcons", true);
-            Scribe_Values.Look(ref colorIcons, "colorIcons", true);
+            //Scribe_Values.Look(ref patchIcons, "patchIcons", true);
+            //Scribe_Values.Look(ref colorIcons, "colorIcons", true);
         }
     }
 
@@ -46,7 +46,7 @@ namespace Syrchalis_ProstheticIcons
 
         public override string SettingsCategory() => "ProstheticIconsCategoryLabel".Translate();
 
-        public override void DoSettingsWindowContents(Rect inRect)
+        /*public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(inRect);
@@ -54,7 +54,7 @@ namespace Syrchalis_ProstheticIcons
             listing_Standard.AddLabeledCheckbox("colorIconsLabel".Translate() + ": ", ref settings.colorIcons);
             listing_Standard.End();
             settings.Write();
-        }
+        }*/
 
         //Looks at defnames and assigns icons based on key strings
         public static void PatchIcons()
