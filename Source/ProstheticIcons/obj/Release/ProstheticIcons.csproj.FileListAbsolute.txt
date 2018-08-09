@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProstheticIcons\Assemblies\ProstheticIcons.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProstheticIcons\Source\ProstheticIcons\obj\Release\ProstheticIcons.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProstheticIcons\Source\ProstheticIcons\obj\Release\ProstheticIcons.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProstheticIcons\Source\ProstheticIcons\obj\Release\ProstheticIcons.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ProstheticIcons\Source\ProstheticIcons\obj\Release\ProstheticIcons.csproj.CopyComplete
