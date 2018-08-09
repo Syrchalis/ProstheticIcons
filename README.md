@@ -14,4 +14,12 @@ So make sure your defnames are logical. For example any body part that replaces 
 You can see that it looks for things like "arm" or "kidney". Note the words are not case sensitive so no need to capitalize anything.
 
 ### Colors get assigned based on key words as well
-Same method as above, colors get assigned by key words. Here it looks for words like "simple" or "archotech"
+Same method as above, colors get assigned by key words. Here it looks for words like "simple" or "archotech" to assign the appropriate color. Defnames just need to contain one of these words if not specified differently.
+There are 7 colors:
+* White - default color, key words: `natural`
+* Brown - for simple prosthetics, key words: `simple prosthetic basic artificial cochlear`
+* Yellow - for bionics, key words: `bionic`
+* Green - for archotech, key words: `archotech advanced`
+* Purple - for advanced archotech, key words: `archotech AND advanced`
+* Dark Blue - for simple animal prosthetics, key words: `animal`
+* Light Blue - for bionic animal prosthetics, key words: `animal AND bionic`
