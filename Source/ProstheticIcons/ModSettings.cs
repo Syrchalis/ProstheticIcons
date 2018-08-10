@@ -12,7 +12,7 @@ using static Harmony.AccessTools;
 
 namespace Syrchalis_ProstheticIcons
 {
-    public class ProstheticIconsSettings : ModSettings
+    /*public class ProstheticIconsSettings : ModSettings
     {
         //public bool patchIcons = true;
         //public bool colorIcons = true;
@@ -23,7 +23,7 @@ namespace Syrchalis_ProstheticIcons
             //Scribe_Values.Look(ref patchIcons, "patchIcons", true);
             //Scribe_Values.Look(ref colorIcons, "colorIcons", true);
         }
-    }
+    }*/
 
     [StaticConstructorOnStartup]
     public static class ThingDefsPatch
@@ -37,16 +37,16 @@ namespace Syrchalis_ProstheticIcons
 
     public class ProstheticIcons : Mod
     {
-        public static ProstheticIconsSettings settings;
+        //public static ProstheticIconsSettings settings;
 
         public ProstheticIcons(ModContentPack content) : base(content)
         {
-            settings = GetSettings<ProstheticIconsSettings>();
+            //settings = GetSettings<ProstheticIconsSettings>();
         }
 
-        public override string SettingsCategory() => "ProstheticIconsCategoryLabel".Translate();
+        /*public override string SettingsCategory() => "ProstheticIconsCategoryLabel".Translate();
 
-        /*public override void DoSettingsWindowContents(Rect inRect)
+        public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(inRect);
@@ -148,7 +148,15 @@ namespace Syrchalis_ProstheticIcons
                     {
                         tDef.graphicData.texPath = "Things/Item/Health/HealthItemTail";
                     }
+                    else if (tDef.defName.Contains("Torso", StringComparison.OrdinalIgnoreCase) || tDef.defName.Contains("Exoskeleton", StringComparison.OrdinalIgnoreCase) || tDef.defName.Contains("Suit", StringComparison.OrdinalIgnoreCase))
+                    {
+                        tDef.graphicData.texPath = "Things/Item/Health/HealthItemTorso";
+                    }
                     //Special cases
+                    else if (tDef.defName.Contains("Bone", StringComparison.OrdinalIgnoreCase))
+                    {
+                        tDef.graphicData.texPath = "Things/Item/Health/HealthItemBone";
+                    }
                     else if (tDef.defName.Contains("Joywire", StringComparison.OrdinalIgnoreCase))
                     {
                         tDef.graphicData.texPath = "Things/Item/Health/HealthItemJoywire";
