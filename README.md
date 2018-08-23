@@ -24,5 +24,6 @@ There are 7 colors:
 * Dark Blue - for simple animal prosthetics, key words: `animal`
 * Light Blue - for bionic animal prosthetics, key words: `animal AND bionic`
 
-You can support me and help me speed up mod development for a small price:
-[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/A0A0IJ2R)
+
+### You can support me and help me speed up mod development for a small price: 
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](ko-fi.com/syrchalis)
