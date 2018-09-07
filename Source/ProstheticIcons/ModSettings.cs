@@ -189,7 +189,7 @@ namespace Syrchalis_ProstheticIcons
         {
             foreach (ThingDef tDef in DefDatabase<ThingDef>.AllDefs)
             {
-                if (tDef.isTechHediff)
+                if (tDef.isTechHediff && !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase))
                 {
                     if (tDef.defName.Contains("Animal", StringComparison.OrdinalIgnoreCase))
                     {
