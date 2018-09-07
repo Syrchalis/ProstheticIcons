@@ -61,9 +61,10 @@ namespace Syrchalis_ProstheticIcons
         {
             foreach (ThingDef tDef in DefDatabase<ThingDef>.AllDefs)
             {
-                if (tDef.isTechHediff && !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase))
+                if (tDef.isTechHediff && !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase))
                 {
                     tDef.graphicData.graphicClass = typeof(Graphic_StackCount);
+                    tDef.graphicData.drawSize = new Vector2 (1.0f, 1.0f);
                     if (tDef.defName.Contains("Arm", StringComparison.OrdinalIgnoreCase))
                     {
                         if (tDef.defName.Contains("Claw", StringComparison.OrdinalIgnoreCase) || tDef.defName.Contains("Power", StringComparison.OrdinalIgnoreCase))
