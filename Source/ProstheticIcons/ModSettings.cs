@@ -61,7 +61,12 @@ namespace Syrchalis_ProstheticIcons
         {
             foreach (ThingDef tDef in DefDatabase<ThingDef>.AllDefs)
             {
-                if (tDef.isTechHediff && !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase))
+                if (tDef.isTechHediff && 
+                    !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && 
+                    !tDef.defName.Contains("Lumber", StringComparison.OrdinalIgnoreCase) && 
+                    !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase) &&
+                    !tDef.defName.Equals("SteelThrumkinHorn") &&
+                    !tDef.defName.Equals("EnhancementThrumkinHorn"))
                 {
                     tDef.graphicData.graphicClass = typeof(Graphic_StackCount);
                     tDef.graphicData.drawSize = new Vector2 (1.0f, 1.0f);
@@ -189,7 +194,12 @@ namespace Syrchalis_ProstheticIcons
         {
             foreach (ThingDef tDef in DefDatabase<ThingDef>.AllDefs)
             {
-                if (tDef.isTechHediff && !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase))
+                if (tDef.isTechHediff && 
+                    !tDef.defName.Contains("WoodLog", StringComparison.OrdinalIgnoreCase) && 
+                    !tDef.defName.Contains("Lumber", StringComparison.OrdinalIgnoreCase) && 
+                    !tDef.defName.Contains("Bamboo", StringComparison.OrdinalIgnoreCase) &&
+                    !tDef.defName.Equals("SteelThrumkinHorn") &&
+                    !tDef.defName.Equals("EnhancementThrumkinHorn"))
                 {
                     if (tDef.defName.Contains("Animal", StringComparison.OrdinalIgnoreCase))
                     {

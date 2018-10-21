@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[SYR] Prosthetic Table</name>
+    <name>[SYR] Prosthetic Icons</name>
     <author>Syrchalis</author>
-    <targetVersion>0.19.2009</targetVersion>
-	<url>https://ludeon.com/forums/index.php?topic=43253</url>
-    <description>Adds a single workbench for all prosthetics. This is mainly an enhancement to vanilla, however it supports all mods that use the fabricator and machining table. For example [FSF] Vanilla Bionics Expansion. Mods that have their own workbenches are generally not supported, mostly because there is no reason to.</description>
+    <targetVersion>1.0.2059</targetVersion>
+	<url>https://ludeon.com/forums/index.php?topic=42913.0</url>
+    <description>Adds icons to every vanilla prosthetic and implant. 
+
+Also adds a special texture for stacks of implants in case you have a mod that allows you to stack them.
+
+2.0: Patch Operations have been replaced by C# code that looks for key words and assigns textures and colors accordingly. This means that instead of relying on compatibility on the side of this mod it now relies on mods that add prosthetics to use the right words in their defnames.
+
+The result is that basically any mod that adds any prosthetic is compatible now.
+</description>
 </ModMetaData>
