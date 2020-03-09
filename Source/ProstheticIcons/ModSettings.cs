@@ -1,4 +1,4 @@
-﻿using Harmony; //harmony is used only for the traverse method, no method is patched here
+﻿using HarmonyLib; //harmony is used only for the traverse method, no method is patched here
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using Verse;
-using static Harmony.AccessTools;
+using static HarmonyLib.AccessTools;
 
 namespace Syrchalis_ProstheticIcons
 {
